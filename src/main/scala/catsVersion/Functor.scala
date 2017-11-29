@@ -18,7 +18,6 @@ object FunctorExample extends App {
   println(Functor[Option].map(maybeName)(_.length))
 
 
-
   //Lift - transform a function A => B into a function F[A] => F[B]
   def greet(name: String): String = s"Hello $name!"
   println(greet("abhishek"))
@@ -45,10 +44,3 @@ object FunctorExample extends App {
 
   println(optUsers.map(x => x.map(greet)))
 }
-
-
-
-
-
-
-
